@@ -1,0 +1,13 @@
+<p class="scope-of-component">product-list Component!</p>
+<div *ngFor="let product of products">
+  <div>
+    <h2>Product</h2>
+    Name: <b>{{product.name}}</b> <br>
+    Description: <b>{{product.description}}</b> <br>
+    Price: <b>{{product.price}}</b> <br>
+    Category: <b>{{product.category}}</b> <br>
+    isAvailable: <b>{{product.isAvailable}}</b> <br><br>
+  </div>
+</div>
+
+<app-product></app-product>

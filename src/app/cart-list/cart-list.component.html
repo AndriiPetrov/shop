@@ -1,0 +1,21 @@
+<p>cart-list works!</p>
+<div *ngIf="this.isBasketNotEmpty; else emptyBasket">
+  <div *ngFor="let product of basket; trackBy: trackByProduct">
+    Name: <b>{{product.name}}</b> <br>
+    Description: <b>{{product.description}}</b> <br>
+    Price: <b>{{product.price}}</b> <br>
+    Category: <b>{{product.category}}</b> <br>
+    isAvailable: <b>{{product.isAvailable}}</b> <br><br>
+  </div>
+</div>
+<ng-template #emptyBasket>
+  Your basket is empty
+</ng-template>
+<div>
+  <h2>Input Component</h2>
+  Name: {{avocado.name}}, <br>
+  Description: {{avocado.description}}, <br>
+  Price: {{avocado.price}}, <br>
+  Category: {{avocado.category}}, <br>
+  isAvailable: {{avocado.isAvailable}} <br><br>
+</div>

@@ -1,0 +1,21 @@
+<p class="scope-of-component">First Component start!</p>
+
+<h2>Administrator</h2>
+<div>
+  Name: {{name}} <br>
+  Description: {{description}} <br>
+  Price: {{price}} <br>
+  Category: {{category}} <br>
+  isAvailable: {{isAvailable}}
+</div>
+
+<h3>Team</h3>
+<div *ngFor = "let worker of workers; let i = index">
+  Name: {{worker.name}} <br>
+  Description: {{worker.description}} <br>
+  Price: {{worker.price}} <br>
+  Category: {{worker.category}} <br>
+  isAvailable: {{worker.isAvailable}}<br><br>
+</div>
+
+<p class="scope-of-component">Firt component finished</p>
