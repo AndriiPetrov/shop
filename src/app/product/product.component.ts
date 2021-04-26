@@ -12,7 +12,7 @@ export class ProductComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onBuy() {
-    console.log('The Product was bought')
+  onBuy(): void {
+    console.log('The Product was bought');
   }
 }
