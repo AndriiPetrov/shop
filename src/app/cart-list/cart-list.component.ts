@@ -8,6 +8,8 @@ import { Product } from '../shared/product.model';
   styleUrls: ['./cart-list.component.scss']
 })
 export class CartListComponent implements OnInit {
+  // Не стоит называть инпут конкретным значением, надо что-то универсальное,
+  // что может принимать не только авокадо, но и банан, яблоко и.т.д.
   @Input() avocado: any;
 
   basket: any = [];

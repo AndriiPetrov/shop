@@ -2,7 +2,7 @@ import { Product } from '../../shared/product.model';
 import { Category } from '../../shared/category.enum';
 import { Injectable } from '@angular/core';
 
-let boughtProducts: Product[] = [
+const boughtProducts: Product[] = [
   {
     name: 'Tomato',
     description: 'Vegetable',
@@ -31,7 +31,7 @@ let boughtProducts: Product[] = [
   //   category: Category.CATEGORY3,
   //   isAvailable: false,
   // },
-]
+];
 
 @Injectable({
   providedIn: 'root'
